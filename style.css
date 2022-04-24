@@ -97,6 +97,26 @@ header a {
     color: #2c3e50;
 }
 
+.flex_wrap {
+    flex-wrap: wrap;
+}
+
+.portfolio img {
+    width: 300px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.logos {
+    margin-top: 10px;
+}
+
+.horizontal_flex_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* media query */
 @media screen and (max-width: 990px) {
     /* header */
