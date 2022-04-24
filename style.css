@@ -117,7 +117,79 @@ header a {
     align-items: center;
 }
 
+/* about */
+.about {
+    background-color: #1abc9c;
+    height: 400px;
+}
+
+.about h1 {
+    color: white;
+    margin-top: 60px;
+}
+
+.about_text {
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    margin: 10px;
+}
+
+.download {
+    border: 1px solid white;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+/* contatti */
+.contacts {
+    height: 550px;
+}
+
+.contacts h1 {
+    color: #2c3e50;
+    margin-top: 60px;
+}
+
+.flex_start {
+    justify-content: flex-start;
+}
+
+.message {
+    width: 65%;
+    margin-top: 20px;
+}
+
+.message hr {
+    margin-bottom: 10px;
+}
+
+#message_margin {
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.send {
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #1abc9c;
+    color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
 /* media query */
+@media screen and (max-width:1200px) {
+    .portfolio {
+        height: 950px;
+    }
+}
+
 @media screen and (max-width: 990px) {
     /* header */
     header h4 {
@@ -137,6 +209,16 @@ header a {
 
     header a {
         font-size: 11px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .portfolio {
+        height: 1650px;
+    }
+
+    .about {
+        height: 500px;
     }
 }
 
@@ -179,5 +261,19 @@ header a {
 
     .job {
         font-size: 15px;
+    }
+
+    .about_text {
+        flex-wrap: wrap;
+    }
+
+    .about {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .about {
+        height: 600px;
     }
 }
