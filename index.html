@@ -26,11 +26,30 @@
                     <a href="">PORTFOLIO</a>
                     <a href="">ABOUT</a>
                     <a href="">CONTACT</a>
-                    <div>
-                        <a href="" class="menu">
-                            <i class="fa-solid fa-bars"></i>
-                        </a>
-                    </div>
+                    <div class="dropdown menu">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown button
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </div>
+                    <!-- <div class="dropdown">
+                        <button type="button" class="btn btn-outline-light btn-dropdown" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa-solid fa-bars"></i>               
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <div class="link-list-wrapper">
+                              <ul class="link-list">
+                                <li><a class="list-item" href="#"><span>Azione 1</span></a></li>
+                                <li><a class="list-item" href="#"><span>Azione 2</span></a></li>
+                                <li><a class="list-item" href="#"><span>Azione 3</span></a></li>
+                              </ul>
+                            </div>
+                        </div>
+                    </div>                 -->
                 </div>
                 <div class="col-xxl-1 col-md-1"></div>
             </div>
@@ -38,7 +57,7 @@
     </header>
 
     <!-- jumbotron -->
-    <div class="bg_jumbotron">
+    <section class="bg_jumbotron">
         <div class="container">
             <div class="row">
                 <div class="col-xxl-3"></div>
@@ -55,12 +74,12 @@
                 <div class="col-xxl-3"></div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- corpo -->
     <main>
         <!-- portfolio -->
-        <div class="container portfolio">
+        <section class="container portfolio">
             <div class="row">
                 <div class="col-xxl-1"></div>
                 <div class="col-xxl-10 col-12 vertical_flex">
@@ -81,10 +100,10 @@
                 </div>
                 <div class="col-xxl-1"></div>
             </div>
-        </div>
+        </section>
 
         <!-- about -->
-        <div class="about">
+        <section class="about">
             <div class="container">
                 <div class="row">
                     <div class="col-xxl-2 col-1"></div>
@@ -99,18 +118,18 @@
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet ab animi debitis dolorum provident porro corrupti, et tempore asperiores quod ullam. Unde quidem quas debitis assumenda distinctio labore cum aspernatur!</p>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet ab animi debitis dolorum provident porro corrupti, et tempore asperiores quod ullam. Unde quidem quas debitis assumenda distinctio labore cum aspernatur!</p>
                         </div>
-                        <a class="download" href="">
+                        <button type="button" class="btn btn-outline-light margin_bottom">
                             <i class="fa-solid fa-download"></i>
-                            <span>Download</span>
-                        </a>
+                            Download
+                        </button>                    
                     </div>
                     <div class="col-xxl-2 col-1"></div>                    
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- contatti -->
-        <div class="contacts">
+        <section class="contacts">
             <div class="container">
                 <div class="row">
                     <div class="vertical_flex">
@@ -120,21 +139,21 @@
                             <i id="blue_star" class="fa-solid fa-star star"></i>
                             <hr class="hr_star">
                         </div>
-                        <div class="message flex_start">
-                            <span>Name</span>
+                        <div class="message margin_bottom">
+                            <input type="text" placeholder="Name"></input>
                             <hr>
-                            <span>Email Address</span>
+                            <input type="text" placeholder="Email Adress"></input>
                             <hr>
-                            <span>Phone number</span>
+                            <input type="text" placeholder="Phone Number"></input>
                             <hr>
-                            <span>Message</span>
+                            <input type="text" placeholder="Message"></input>
                             <hr id="message_margin">
-                            <a class="send" href="">Send</a>
+                            <button class="btn background_button" type="submit">Send</button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- footer -->
         <footer>

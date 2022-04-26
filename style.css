@@ -45,7 +45,7 @@ header a {
 /* jumbotron */
 .bg_jumbotron {
     background-color: #1abc9c;
-    height: 500px;
+    height: auto;
 }
 
 .vertical_flex {
@@ -80,11 +80,12 @@ header a {
     color: white;
     margin-top: 20px;
     font-size: 20px;
+    margin-bottom: 50px;
 }
 
 /* portfolio */
 .portfolio {
-    height: 700px;
+    height: auto;
 }
 
 .portfolio h1 {
@@ -109,6 +110,7 @@ header a {
 
 .logos {
     margin-top: 10px;
+    margin-bottom: 50px;
 }
 
 .horizontal_flex_center {
@@ -120,7 +122,7 @@ header a {
 /* about */
 .about {
     background-color: #1abc9c;
-    height: 400px;
+    height: auto;
 }
 
 .about h1 {
@@ -138,26 +140,18 @@ header a {
     margin: 10px;
 }
 
-.download {
-    border: 1px solid white;
-    text-decoration: none;
-    color: white;
-    border-radius: 5px;
-    padding: 5px 10px;
+.margin_bottom {
+    margin-bottom: 50px;
 }
 
 /* contatti */
 .contacts {
-    height: 550px;
+    height: auto;
 }
 
 .contacts h1 {
     color: #2c3e50;
     margin-top: 60px;
-}
-
-.flex_start {
-    justify-content: flex-start;
 }
 
 .message {
@@ -170,24 +164,17 @@ header a {
 }
 
 #message_margin {
-    margin-top: 100px;
+    margin-top: 150px;
     margin-bottom: 20px;
 }
 
-.send {
-    text-decoration: none;
-    padding: 5px 10px;
+.background_button {
     background-color: #1abc9c;
     color: white;
-    border-radius: 5px;
-    margin-top: 20px;
 }
 
-/* media query */
-@media screen and (max-width:1200px) {
-    .portfolio {
-        height: 950px;
-    }
+.contacts input {
+    border: 0;
 }
 
 @media screen and (max-width: 990px) {
@@ -212,16 +199,6 @@ header a {
     }
 }
 
-@media screen and (max-width:768px) {
-    .portfolio {
-        height: 1650px;
-    }
-
-    .about {
-        height: 500px;
-    }
-}
-
 @media screen and (max-width: 576px) {
     * {
         margin: 0;
@@ -239,12 +216,6 @@ header a {
 
     .menu {
         display: block;
-        border: solid 1px white;
-        color: gray;
-        padding-left: 8px;
-        padding-right: 8px;
-        border-radius: 5px;
-        font-size: 15px;
     }
     
     .horizontal_flex {
@@ -265,15 +236,5 @@ header a {
 
     .about_text {
         flex-wrap: wrap;
-    }
-
-    .about {
-        height: 500px;
-    }
-}
-
-@media screen and (max-width: 468px) {
-    .about {
-        height: 600px;
     }
 }
